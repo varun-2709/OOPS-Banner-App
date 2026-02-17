@@ -1,34 +1,65 @@
 /**
- * OOPSBannerApp UC2 - Banner Display Application
+ * OOPSBannerApp UC3 - Banner Display Application
  *
  * Displays the word "OOPS" in a banner format using
  * asterisks (*) and spaces via multiple print statements.
  *
  * @author Developer
- * @version 2.0
+ * @version 3.0
  */
 
-public class OOPSBannerApp{
-    public static void main(String[]args){
-      // Line 1
-        System.out.println("  ***  " + "   " + "  ***  " + "   " + " ******* " + "   " + " ******* ");
+public class Banner {
 
-        // Line 2
-        System.out.println(" *   * " + "   " + " *   * " + "   " + " *     * " + "   " + " *     * ");
+    public static void main(String[] args) {
 
-        // Line 3
-        System.out.println("*     *" + " " + "*     *" + " " + " *     * " + "   " + " *     * ");
+        String line1 = String.join("  ",
+                " ***** ",
+                " ***** ",
+                " ******",
+                " ***** ");
 
-        // Line 4
-        System.out.println("*     *" + " " + "*     *" + " " + " ******* " + "   " + " ******* ");
+        String line2 = String.join("  ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *");
 
-        // Line 5
-        System.out.println("*     *" + " " + "*     *" + " " + " *       " + "   " + " *       ");
+        String line3 = String.join("  ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*      ");
 
-        // Line 6
-        System.out.println(" *   * " + "   " + " *   * " + "   " + " *       " + "   " + " *       ");
+        String line4 = String.join("  ",
+                "*     *",
+                "*     *",
+                " ******",
+                " ***** ");
 
-        // Line 7
-        System.out.println("  ***  " + "   " + "  ***  " + "   " + " *       " + "   " + " *       ");
+        String line5 = String.join("  ",
+                "*     *",
+                "*     *",
+                "*      ",
+                "      *");
+
+        String line6 = String.join("  ",
+                "*     *",
+                "*     *",
+                "*      ",
+                "*     *");
+
+        String line7 = String.join("  ",
+                " ***** ",
+                " ***** ",
+                "*      ",
+                " ***** ");
+
+        System.out.println(line1);
+        System.out.println(line2);
+        System.out.println(line3);
+        System.out.println(line4);
+        System.out.println(line5);
+        System.out.println(line6);
+        System.out.println(line7);
     }
 }
