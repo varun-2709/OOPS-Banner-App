@@ -1,34 +1,29 @@
 /**
- * OOPSBannerApp UC2 - Banner Display Application
+ * OOPSBannerApp feature/UC-4
  *
  * Displays the word "OOPS" in a banner format using
  * asterisks (*) and spaces via multiple print statements.
  *
  * @author Developer
- * @version 2.0
+ * @version 4.0
  */
 
-public class OOPSBannerApp{
-    public static void main(String[]args){
-      // Line 1
-        System.out.println("  ***  " + "   " + "  ***  " + "   " + " ******* " + "   " + " ******* ");
 
-        // Line 2
-        System.out.println(" *   * " + "   " + " *   * " + "   " + " *     * " + "   " + " *     * ");
+public class OOPSBannerApp {
+    public static void main(String[] args) {
 
-        // Line 3
-        System.out.println("*     *" + " " + "*     *" + " " + " *     * " + "   " + " *     * ");
+        String[][] oop = {
+            {"   ***   ", "    ***    ", "*****   ", "*********"  },
+            {" **   **  ", " **   **  ", "******  ", "*********"  },
+            {"**     ** ", "**     ** ", "**   ** ", "**" },
+            {"**     ** ", "**     ** ", "**   ** ", "*********" },
+            {"**     ** ", "**     ** ", "******  ", "      ***" },
+            {" **   **  ", " **   **  ", "**      ", "*********" },
+            {"   ***    ", "   ***    ", "**      ", "*********"}
+        };
 
-        // Line 4
-        System.out.println("*     *" + " " + "*     *" + " " + " ******* " + "   " + " ******* ");
-
-        // Line 5
-        System.out.println("*     *" + " " + "*     *" + " " + " *       " + "   " + " *       ");
-
-        // Line 6
-        System.out.println(" *   * " + "   " + " *   * " + "   " + " *       " + "   " + " *       ");
-
-        // Line 7
-        System.out.println("  ***  " + "   " + "  ***  " + "   " + " *       " + "   " + " *       ");
+        for (int i = 0; i < oop.length; i++) {
+            System.out.println(String.join("   ", oop[i]));
+        }
     }
 }
